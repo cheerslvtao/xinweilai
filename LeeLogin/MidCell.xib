@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MidCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_hyjs" translatesAutoresizingMaskIntoConstraints="NO" id="zcL-Pr-csx">
+                        <rect key="frame" x="15" y="15" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="zcL-Pr-csx" secondAttribute="height" multiplier="1:1" id="k4I-Oh-Q8D"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zcL-Pr-csx" secondAttribute="trailing" constant="15" id="f8x-Wi-6Te"/>
+                <constraint firstItem="zcL-Pr-csx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="s1H-qA-uWZ"/>
+                <constraint firstItem="zcL-Pr-csx" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="zVZ-vu-F5A"/>
+            </constraints>
+            <connections>
+                <outlet property="img" destination="zcL-Pr-csx" id="Y69-e9-xZf"/>
+            </connections>
+            <point key="canvasLocation" x="21" y="334"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="nav_hyjs" width="49" height="46"/>
+    </resources>
+</document>

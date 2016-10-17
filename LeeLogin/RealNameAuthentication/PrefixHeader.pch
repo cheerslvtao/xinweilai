@@ -1,0 +1,33 @@
+//
+//  PrefixHeader.pch
+//  HeartFuture
+//
+//  Created by 光之翼 on 16/7/5.
+//  Copyright © 2016年 光之翼. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
+#define SCREEN_width [UIScreen mainScreen].bounds.size.width//屏幕宽
+#define SCREEN_height [UIScreen mainScreen].bounds.size.height//屏幕高
+#define SCREEN_bounds [UIScreen mainScreen].bounds//屏幕大小
+#define THIRTEEN [UIFont systemFontOfSize:20]//字体大小
+#define IS_IPHONE5 [UIScreen mainScreen].bounds.size.height<600?YES:NO
+#define IS_IPHONE6Plus [UIScreen mainScreen].bounds.size.height>700?YES:NO
+#define USER_D [NSUserDefaults standardUserDefaults]//本地存储信息
+#define NOTI_CENTER [NSNotificationCenter defaultCenter]//监听
+#define FILE_M [NSFileManager defaultManager]//管理者
+//自定义颜色
+#define COLOR(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
+#define BGCOLOR  [UIColor colorWithRed:244/255.0 green:245/255.0 blue:247/255.0 alpha:1]
+#import "LeeAllView.h"
+#import "NvigationItemSingle.h"
+
+#define BACK_NAVIGATION [NvigationItemSingle standSingle]
+//#import "HTTPURL.h"
+//#import "TITERView.h"
